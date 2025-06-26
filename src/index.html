@@ -4,38 +4,46 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Моневак</title>
+		<link rel="stylesheet" href="styles/main.css" />
 	</head>
 	<body>
-		<header>
+		<header class="header">
 			<div class="container">
-				<div class="menu-button"></div>
-				<ul class="links">
-					<li><a href="">Упаковка</a></li>
-					<li><a href="">Оборудование</a></li>
-					<li><a href="">Сервис и запчасти</a></li>
-				</ul>
-				<div class="logo-wrap">
-					<img src="" alt="" class="logo" />
-					<div class="company-name">Моневак</div>
+				<div class="flex-container">
+					<div class="menu-button">
+						<div class="line upper-line"></div>
+						<div class="line lower-line"></div>
+					</div>
+					<ul class="header-links">
+						<li><a href="">Упаковка</a></li>
+						<li><a href="">Оборудование</a></li>
+						<li><a href="">Сервис и запчасти</a></li>
+					</ul>
+					<div class="logo-wrap">
+						<img src="icons/logo.svg" alt="logo" class="logo" />
+					</div>
+					<div class="search">
+						<img src="icons/compare.svg" alt="" />
+						<img src="icons/search.svg" alt="" />
+					</div>
+					<div class="header-contacts">
+						<a href="tel:+74991361718" class="number">+7 (499) 136-17-18</a>
+						<a href="mailto:info@monevac.ru" class="mail">info@monevac.ru</a>
+					</div>
+					<button class="button request-button">Оставить заявку</button>
 				</div>
-				<div class="search">
-					<img src="" alt="" />
-					<img src="" alt="" />
-				</div>
-				<div class="contacts">
-					<a href="tel:+74991361718">+7 (499) 136-17-18</a>
-					<a href="mailto:info@monevac.ru">info@monevac.ru</a>
-				</div>
-				<button class="button request-button">Оставить заявку</button>
 			</div>
 		</header>
-		<nav>
-			<a href="">Главная</a>
-			<a href="">Контакты</a>
+		<nav class="navigation">
+			<div class="nav-flex">
+				<a href="">Главная</a>
+				<div class="point"></div>
+				<a href="">Контакты</a>
+			</div>
 		</nav>
 		<main>
+			<h1 class="title">Контакты</h1>
 			<section class="contacts">
-				<h1 class="title">Контакты</h1>
 				<div class="container">
 					<div class="info">
 						<a href="tel:+79034679851">8 (903) 467 98 51</a>
