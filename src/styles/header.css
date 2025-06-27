@@ -17,7 +17,7 @@
 
 		.line {
 			border-radius: 2px;
-			background-color: var(--main-dark-color);
+			background-color: var(--main-dark);
 		}
 
 		.upper-line {
@@ -36,7 +36,9 @@
 			column-gap: 46px;
 			li {
 				a {
-					color: var(--main-dark-color);
+					color: var(--main-dark);
+					font-size: 15px;
+					font-weight: 400;
 				}
 			}
 		}
@@ -52,14 +54,14 @@
 				display: block;
 				font-size: 15px;
 				font-weight: 500;
-				color: var(--main-dark-color);
+				color: var(--main-dark);
 			}
 			.mail {
 				margin-top: 6px;
 				font-size: 13px;
 				font-weight: 400;
 				line-height: 120%;
-				color: var(--secondary-text-color);
+				color: var(--secondary-text);
 			}
 		}
 	}
@@ -68,7 +70,7 @@
 .navigation {
 	padding: 21px 0 25px 0;
 	background-color: var(--grey-bg);
-	border-bottom: 1px solid var(--lines-color);
+	border-bottom: 1px solid var(--darker-grey);
 
 	.nav-flex {
 		display: flex;
@@ -80,7 +82,7 @@
 		a {
 			font-size: 12px;
 			font-weight: 400;
-			color: var(--secondary-text-color);
+			color: var(--secondary-text);
 		}
 
 		a:hover {
@@ -90,7 +92,7 @@
 			width: 2px;
 			height: 2px;
 			border-radius: 100%;
-			background-color: var(--secondary-text-color);
+			background-color: var(--secondary-text);
 		}
 	}
 }

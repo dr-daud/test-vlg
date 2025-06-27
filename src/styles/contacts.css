@@ -4,7 +4,7 @@
 	background-color: var(--grey-bg);
 	font-weight: 400;
 	font-size: 46px;
-	color: var(--main-dark-color);
+	color: var(--main-dark);
 }
 
 .contacts {
@@ -21,7 +21,7 @@
 			width: 607px;
 
 			.info-number {
-				color: var(--main-dark-color);
+				color: var(--main-dark);
 				font-size: 36px;
 				font-weight: 400;
 				line-height: 110%;
@@ -35,18 +35,25 @@
 
 			.additional-info {
 				font-size: 17px;
-				margin-top: 20px;
+				margin-top: 15px;
 				font-weight: 400;
 				line-height: 110%;
-				color: var(--main-dark-color);
+				color: var(--main-dark);
+				p {
+					margin-top: 5px;
+				}
 			}
 
 			.info-text {
 				margin-top: 15px;
-				font-size: 13px;
-				font-weight: 400;
-				line-height: 150%;
-				color: var(--secondary-text-color);
+				color: var(--secondary-text);
+
+				address {
+					font-size: 13px;
+					font-weight: 400;
+					line-height: 150%;
+					font-style: normal;
+				}
 			}
 		}
 	}
@@ -72,8 +79,8 @@
 			border: none;
 			border-radius: 14px;
 			background-color: var(--grey-bg);
-			padding: 17px 0 11px 20px;
-			color: var(--secondary-text-color);
+			padding-left: 20px;
+			color: var(--secondary-text);
 			font-size: 16px;
 			line-height: 150%;
 			font-weight: 400;
@@ -82,24 +89,52 @@
 
 		.text-area {
 			display: block;
+			padding-top: 17px;
 			resize: none;
 			width: 100%;
 		}
 
 		.info-checkbox {
-			display: block;
+			display: flex;
+			align-items: center;
 			margin-top: 20px;
-			font-size: 13px;
-			line-height: 120%;
-			font-weight: 400;
-			color: var(--secondary-text-color);
+			column-gap: 16px;
 
 			input {
-				margin-right: 16px;
+				width: 20px;
+				height: 20px;
+				appearance: none;
+				-webkit-appearance: none;
+				background-color: var(--grey-bg);
+				border: var(--grey-bg);
+				cursor: pointer;
+				border-radius: 4px;
+				position: relative;
+
+				&:hover {
+					background-color: var(--main-red);
+				}
+
+				&:checked::after {
+					content: "✔";
+					color: white;
+					position: absolute;
+					top: 0;
+					left: 3px;
+					font-size: 16px;
+					line-height: 20px;
+				}
 			}
 
-			span {
-				color: var(--main-dark-color);
+			label {
+				font-size: 13px;
+				line-height: 120%;
+				font-weight: 400;
+				color: var(--secondary-text);
+
+				span {
+					color: var(--main-dark);
+				}
 			}
 		}
 

@@ -20,7 +20,7 @@
 				font-size: 26px;
 				font-weight: 400;
 				line-height: 110%;
-				color: var(--main-dark-color);
+				color: var(--main-dark);
 				text-transform: uppercase;
 				padding-bottom: 15px;
 			}
@@ -34,19 +34,21 @@
 			.branch-number {
 				display: block;
 				font-size: 19px;
-				color: var(--main-dark-color);
+				color: var(--main-dark);
 				line-height: 150%;
 			}
 
 			address {
 				margin-top: 10px;
-				color: var(--secondary-text-color);
+				color: var(--secondary-text);
 				font-size: 14px;
 				line-height: 140%;
 				font-style: normal;
 			}
 
 			.route {
+				display: inline-block;
+				margin-top: 5px;
 				color: var(--main-red);
 				font-size: 14px;
 				font-weight: 400;
@@ -57,7 +59,7 @@
 				position: absolute;
 				bottom: 40px;
 				margin-top: 20px;
-				color: var(--main-dark-color);
+				color: var(--main-dark);
 				line-height: 140%;
 				font-size: 14px;
 				font-weight: 400;

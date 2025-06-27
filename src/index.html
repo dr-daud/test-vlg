@@ -4,6 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Моневак</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="styles/main.css" />
 	</head>
 	<body>
@@ -100,7 +104,8 @@
 									class="name-input"
 								/>
 								<input
-									type="number"
+									type="tel"
+									pattern="\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}"
 									placeholder="Ваш телефон"
 									class="number-input"
 								/>
@@ -110,22 +115,27 @@
 								placeholder="Ваше сообщение"
 								rows="5"
 							></textarea>
-							<label class="info-checkbox">
+							<div class="info-checkbox">
 								<input
 									type="checkbox"
 									name="subscribe"
 									placeholder="Ваше сообщение"
+									id="agree"
 								/>
-								Я подтверждаю свое согласие с политикой в отношении
-								<span> обработки персональных данных</span>
-							</label>
-							<button class="button request-button">Задать вопрос</button>
+								<label for="agree">
+									Я подтверждаю свое согласие с политикой в отношении
+									<span> обработки персональных данных</span>
+								</label>
+							</div>
+							<button type="submit" class="button request-button">
+								Задать вопрос
+							</button>
 						</form>
 					</div>
 				</div>
 			</section>
 			<section>
-				<div class="map"></div>
+				<div id="map"></div>
 			</section>
 			<section class="branches">
 				<div class="container">
@@ -238,54 +248,65 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="footer-links">
-				<div class="links-wrap">
-					<div class="inner-wrap">
-						<div class="product-links">
-							<a href="#">Упаковочное оборудование</a>
-							<a href="#">Пленки</a>
-							<a href="#">Пакеты</a>
-							<a href="#">Прочие материалы</a>
+			<div class="container">
+				<div class="flex-wrap">
+					<div class="footer-links">
+						<div class="links-wrap">
+							<div class="inner-wrap">
+								<div class="product-links">
+									<a href="#">Упаковочное оборудование</a>
+									<a href="#">Пленки</a>
+									<a href="#">Пакеты</a>
+									<a href="#">Прочие материалы</a>
+								</div>
+								<ul class="links">
+									<li>О Компании</li>
+									<li>Партнеры</li>
+									<li>Доставка</li>
+									<li>Оплата</li>
+									<li>Обмен и возврат</li>
+									<li>Контакты</li>
+									<li>Распродажа</li>
+									<li>Сервис</li>
+									<li>Новости</li>
+								</ul>
+							</div>
+							<div class="line"></div>
+							<p class="rights">© Моневак 2020 | Все права защищены</p>
 						</div>
-						<ul class="links">
-							<li>О Компании</li>
-							<li>Партнеры</li>
-							<li>Доставка</li>
-							<li>Оплата</li>
-							<li>Обмен и возврат</li>
-							<li>Контакты</li>
-							<li>Распродажа</li>
-							<li>Сервис</li>
-							<li>Новости</li>
-						</ul>
 					</div>
-					<div class="line"></div>
-					<p class="rights">© Моневак 2020 | Все права защищены</p>
-				</div>
-			</div>
-			<div class="footer-info">
-				<div class="contacts-wrap">
-					<div class="inner-wrap">
-						<div class="footer-contacts">
-							<a href="tel:+74991361718" class="footer-number"
-								>+7 (499) 136-17-18</a
-							>
-							<a href="tel:+79034679851" class="footer-number"
-								>+7 (903) 467-98-51
-							</a>
-							<a href="mailto:info@monevac.ru" class="footer-mail"
-								>info@monevac.ru</a
-							>
+					<div class="footer-info">
+						<div class="contacts-wrap">
+							<div class="inner-wrap">
+								<div class="footer-contacts">
+									<a href="tel:+74991361718" class="footer-number"
+										>+7 (499) 136-17-18</a
+									>
+									<a href="tel:+79034679851" class="footer-number"
+										>+7 (903) 467-98-51
+									</a>
+									<a href="mailto:info@monevac.ru" class="footer-mail"
+										>info@monevac.ru</a
+									>
+								</div>
+								<button class="button callback-button">Обратный звонок</button>
+							</div>
+							<address>
+								Москва ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 <br />
+								(станция метро "Павелецкая")
+							</address>
 						</div>
-						<button class="button callback-button">Обратный звонок</button>
+						<a class="add"
+							>Разработка и продвижение сайта - <span>TODO</span></a
+						>
 					</div>
-					<address>
-						Москва ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 <br />
-						(станция метро "Павелецкая")
-					</address>
 				</div>
-				<a class="add">Разработка и продвижение сайта - <span>TODO</span></a>
 			</div>
 		</footer>
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=ad5c4f52-8276-4fe9-941f-b370ef74cbcb&lang=ru_RU"
+			type="text/javascript"
+		></script>
+		<script src="js/map.js"></script>
 	</body>
 </html>
