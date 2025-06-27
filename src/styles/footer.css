@@ -1,0 +1,129 @@
+.footer {
+	display: flex;
+	position: relative;
+
+	.footer-links {
+		display: flex;
+		justify-content: center;
+		width: 50%;
+		padding: 63px 0 31px 0;
+		background-color: #222225;
+
+		.inner-wrap {
+			.product-links {
+				display: flex;
+				flex-direction: column;
+				a {
+					font-weight: 400;
+					font-size: 24px;
+					line-height: 140%;
+					color: #fff;
+					margin-top: 10px;
+				}
+			}
+
+			.links {
+				display: flex;
+				margin-top: 69px;
+				flex-wrap: wrap;
+				max-width: 490px;
+				padding-bottom: 43px;
+
+				li {
+					margin-right: 10px;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 180%;
+					color: var(--secondary-text-color);
+				}
+
+				li:hover {
+					color: #fff;
+				}
+			}
+		}
+
+		.line {
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background-color: var(--lines-color);
+			bottom: 68px;
+			right: 0;
+			opacity: 5%;
+		}
+
+		.rights {
+			margin-top: 23px;
+			color: var(--secondary-text-color);
+			font-size: 13px;
+			line-height: 110%;
+			font-weight: 400;
+		}
+	}
+
+	.footer-info {
+		width: 50%;
+		padding: 63px 0px 33px 126px;
+		background-color: #2a2a2e;
+
+		.contacts-wrap {
+			.inner-wrap {
+				display: flex;
+				column-gap: 61px;
+
+				.footer-contacts {
+					display: flex;
+					flex-direction: column;
+
+					.footer-number {
+						font-size: 30px;
+						font-weight: 500;
+						line-height: 130%;
+						color: #fff;
+
+						&:nth-child(2) {
+							margin-top: 10px;
+						}
+					}
+
+					.footer-mail {
+						margin-top: 20px;
+						font-weight: 400;
+						font-size: 24px;
+						line-height: 140%;
+						color: var(--main-red);
+					}
+				}
+
+				.callback-button {
+					background-color: transparent;
+					border: 2px solid #494950;
+				}
+			}
+
+			address {
+				margin-top: 97px;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 130%;
+				color: #fff;
+				padding-bottom: 55px;
+			}
+		}
+
+		.add {
+			display: block;
+			margin-top: 21px;
+			font-size: 13px;
+			line-height: 110%;
+			font-weight: 400;
+			color: var(--secondary-text-color);
+
+			span {
+				color: #fff;
+			}
+		}
+	}
+}

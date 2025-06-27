@@ -9,4 +9,116 @@
 
 .contacts {
 	padding: 62px 0 66px 0;
+	display: flex;
+
+	.contacts-flex {
+		display: flex;
+		column-gap: 53px;
+
+		.info {
+			display: flex;
+			flex-direction: column;
+			width: 607px;
+
+			.info-number {
+				color: var(--main-dark-color);
+				font-size: 36px;
+				font-weight: 400;
+				line-height: 110%;
+			}
+
+			.info-mail {
+				color: var(--main-red);
+				font-size: 25px;
+				font-weight: 400;
+			}
+
+			.additional-info {
+				font-size: 17px;
+				margin-top: 20px;
+				font-weight: 400;
+				line-height: 110%;
+				color: var(--main-dark-color);
+			}
+
+			.info-text {
+				margin-top: 15px;
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 150%;
+				color: var(--secondary-text-color);
+			}
+		}
+	}
+
+	.contact-us {
+		width: 630px;
+
+		.form-label {
+			font-size: 36px;
+			line-height: 110%;
+			font-weight: 400;
+		}
+
+		.contact-info {
+			display: flex;
+			column-gap: 30px;
+		}
+		.name-input,
+		.number-input,
+		.text-area {
+			flex: 1;
+			min-height: 52px;
+			border: none;
+			border-radius: 14px;
+			background-color: var(--grey-bg);
+			padding: 17px 0 11px 20px;
+			color: var(--secondary-text-color);
+			font-size: 16px;
+			line-height: 150%;
+			font-weight: 400;
+			margin-top: 20px;
+		}
+
+		.text-area {
+			display: block;
+			resize: none;
+			width: 100%;
+		}
+
+		.info-checkbox {
+			display: block;
+			margin-top: 20px;
+			font-size: 13px;
+			line-height: 120%;
+			font-weight: 400;
+			color: var(--secondary-text-color);
+
+			input {
+				margin-right: 16px;
+			}
+
+			span {
+				color: var(--main-dark-color);
+			}
+		}
+
+		.request-button {
+			margin-top: 30px;
+		}
+	}
+}
+
+@media (max-width: 1350px) {
+	.contacts-flex {
+		column-gap: 73px;
+
+		.info {
+			max-width: 350px;
+		}
+
+		.contact-us {
+			max-width: 350px;
+		}
+	}
 }

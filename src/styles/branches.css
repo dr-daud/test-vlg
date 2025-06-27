@@ -1,0 +1,67 @@
+.branches {
+	padding: 81px 0 100px 0;
+
+	.branches-info {
+		display: grid;
+		grid-template: repeat(2, 310px) / repeat(4, 1fr);
+		gap: 30px;
+
+		.wide {
+			grid-column: 3/5;
+		}
+
+		.single-branch {
+			position: relative;
+			background-color: var(--grey-bg);
+			border-radius: 20px;
+			padding: 33px 16px 40px 22px;
+
+			.city-name {
+				font-size: 26px;
+				font-weight: 400;
+				line-height: 110%;
+				color: var(--main-dark-color);
+				text-transform: uppercase;
+				padding-bottom: 15px;
+			}
+
+			.number-wrap {
+				display: flex;
+				align-items: center;
+				font-size: 19px;
+			}
+
+			.branch-number {
+				display: block;
+				font-size: 19px;
+				color: var(--main-dark-color);
+				line-height: 150%;
+			}
+
+			address {
+				margin-top: 10px;
+				color: var(--secondary-text-color);
+				font-size: 14px;
+				line-height: 140%;
+				font-style: normal;
+			}
+
+			.route {
+				color: var(--main-red);
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 140%;
+			}
+
+			.schedule {
+				position: absolute;
+				bottom: 40px;
+				margin-top: 20px;
+				color: var(--main-dark-color);
+				line-height: 140%;
+				font-size: 14px;
+				font-weight: 400;
+			}
+		}
+	}
+}

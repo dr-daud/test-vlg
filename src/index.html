@@ -10,27 +10,31 @@
 		<header class="header">
 			<div class="container">
 				<div class="flex-container">
-					<div class="menu-button">
-						<div class="line upper-line"></div>
-						<div class="line lower-line"></div>
+					<div class="left">
+						<div class="menu-button">
+							<div class="line upper-line"></div>
+							<div class="line lower-line"></div>
+						</div>
+						<ul class="header-links">
+							<li><a href="">Упаковка</a></li>
+							<li><a href="">Оборудование</a></li>
+							<li><a href="">Сервис и запчасти</a></li>
+						</ul>
 					</div>
-					<ul class="header-links">
-						<li><a href="">Упаковка</a></li>
-						<li><a href="">Оборудование</a></li>
-						<li><a href="">Сервис и запчасти</a></li>
-					</ul>
 					<div class="logo-wrap">
 						<img src="icons/logo.svg" alt="logo" class="logo" />
 					</div>
-					<div class="search">
-						<img src="icons/compare.svg" alt="" />
-						<img src="icons/search.svg" alt="" />
+					<div class="right">
+						<div class="search">
+							<img src="icons/compare.svg" alt="" />
+							<img src="icons/search.svg" alt="" />
+						</div>
+						<div class="header-contacts">
+							<a href="tel:+74991361718" class="number">+7 (499) 136-17-18</a>
+							<a href="mailto:info@monevac.ru" class="mail">info@monevac.ru</a>
+						</div>
+						<button class="button request-button">Оставить заявку</button>
 					</div>
-					<div class="header-contacts">
-						<a href="tel:+74991361718" class="number">+7 (499) 136-17-18</a>
-						<a href="mailto:info@monevac.ru" class="mail">info@monevac.ru</a>
-					</div>
-					<button class="button request-button">Оставить заявку</button>
 				</div>
 			</div>
 		</header>
@@ -45,143 +49,205 @@
 			<h1 class="title">Контакты</h1>
 			<section class="contacts">
 				<div class="container">
-					<div class="info">
-						<a href="tel:+79034679851">8 (903) 467 98 51</a>
-						<a href="mailto:info@monevac.ru">info@monevac.ru</a>
-						<p>Полное наименование:</p>
-						<p>Общество с ограниченной ответственностью «МОНЕВАК»</p>
-						<p>Сокращенное наименование: ООО «МОНЕВАК»</p>
-						<ul>
-							<li>ИНН: 3448050610</li>
-							<li>КПП: 344801001</li>
-							<li>ОКПО: 67354285</li>
-							<li>ОКАТО: 18401000000</li>
-							<li>ОГРН: 1103461002480</li>
-							<li>Код по ОКВЭД: 51.70</li>
-						</ul>
-						<ul>
-							<li>
-								Банк: Филиала «Ростовский» ОАО «Альфа-Банк» г Ростов на Дону
-							</li>
-							<li>БИК: 046015207</li>
-							<li>к/с: 30101810500000000207</li>
-							<li>р/с: 40702810926090000003</li>
-						</ul>
-						<div class="address">
-							<address>
-								Юридический адрес: 400080, Волгоградская обл. г. Волгоград ул.
-								Командира Рудь,14А, офис 13
-							</address>
-							<address>
-								Почтовый адрес: 400080, Волгоградская обл. г. Волгоград ул.
-								Командира Рудь, 14А, офис 13
-							</address>
+					<div class="contacts-flex">
+						<div class="info">
+							<a href="tel:+79034679851" class="info-number"
+								>8 (903) 467 98 51</a
+							>
+							<a href="mailto:info@monevac.ru" class="info-mail"
+								>info@monevac.ru</a
+							>
+							<div class="additional-info">
+								<p>Полное наименование:</p>
+								<p>Общество с ограниченной ответственностью «МОНЕВАК»</p>
+								<p>Сокращенное наименование: ООО «МОНЕВАК»</p>
+							</div>
+							<ul class="info-text">
+								<li>ИНН: 3448050610</li>
+								<li>КПП: 344801001</li>
+								<li>ОКПО: 67354285</li>
+								<li>ОКАТО: 18401000000</li>
+								<li>ОГРН: 1103461002480</li>
+								<li>Код по ОКВЭД: 51.70</li>
+							</ul>
+							<ul class="info-text">
+								<li>
+									Банк: Филиала «Ростовский» ОАО «Альфа-Банк» г Ростов на Дону
+								</li>
+								<li>БИК: 046015207</li>
+								<li>к/с: 30101810500000000207</li>
+								<li>р/с: 40702810926090000003</li>
+							</ul>
+							<div class="info-text">
+								<address>
+									Юридический адрес: 400080, Волгоградская обл. г. Волгоград
+									<br />
+									ул. Командира Рудь,14А, офис 13
+								</address>
+								<address>
+									Почтовый адрес: 400080, Волгоградская обл. г. Волгоград <br />
+									ул. Командира Рудь, 14А, офис 13
+								</address>
+							</div>
 						</div>
-					</div>
-					<form class="contact-us">
-						<label class="from-label">Оставлись вопросы?</label>
-						<div class="contact-info">
-							<input type="text" placeholder="Ваше имя" />
-							<input type="number" placeholder="Ваш телефон" />
-						</div>
-						<input type="text" />
-						<label>
-							<input
-								type="checkbox"
-								name="subscribe"
+						<form class="contact-us">
+							<label for="name" class="form-label">Остались вопросы?</label>
+							<div class="contact-info">
+								<input
+									type="text"
+									id="name"
+									placeholder="Ваше имя"
+									class="name-input"
+								/>
+								<input
+									type="number"
+									placeholder="Ваш телефон"
+									class="number-input"
+								/>
+							</div>
+							<textarea
+								class="text-area"
 								placeholder="Ваше сообщение"
-							/>
-							Я подтверждаю свое согласие с политикой в отношении
-							обработкиперсональных данных
-						</label>
-						<button class="button request-button">Задать вопрос</button>
-					</form>
+								rows="5"
+							></textarea>
+							<label class="info-checkbox">
+								<input
+									type="checkbox"
+									name="subscribe"
+									placeholder="Ваше сообщение"
+								/>
+								Я подтверждаю свое согласие с политикой в отношении
+								<span> обработки персональных данных</span>
+							</label>
+							<button class="button request-button">Задать вопрос</button>
+						</form>
+					</div>
 				</div>
 			</section>
 			<section>
 				<div class="map"></div>
 			</section>
-			<section>
-				<div class="branches-info">
-					<div class="single-branch">
-						<div class="city-name">МОСКВА</div>
-						<a href="tel:+74991361718">+7 (499) 136-17-18</a>
-						<a href="tel:+79034679851">+7 (903) 467-98-51</a>
-						<address>
-							115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6
-							(станция метро "Павелецкая")
-						</address>
-						<a href="">Проложить маршрут</a>
-						<p class="schedule">Режим работы: c 10:00 до 18:00</p>
-					</div>
-					<div class="single-branch">
-						<div class="city-name">Волгоград</div>
-						<a href="tel:+78442650888">+7 (8442) 65-08-88</a>
-						<a href="tel:+78442650888">+7 (8442) 65-08-80</a>
-						<address>400080, ул. Командира Рудь, 14А</address>
-						<a href="">Проложить маршрут</a>
-						<p class="schedule">Режим работы: c 08:00 до 17:00</p>
-					</div>
-					<div class="single-branch">
-						<div class="city-name">КРАСНОДАР</div>
-						<a href="tel:+78612927188">+7 (861) 292-71-88</a>
-						<a href="tel:+79034679851">+7 (903) 467-98-51</a>
-						<address>350015, ул. Митрофана Седина, 176</address>
-						<a href="">Проложить маршрут</a>
-						<p class="schedule">Режим работы: c 08:00 до 17:00</p>
-					</div>
-					<div class="single-branch">
-						<div class="city-name">Саратов</div>
-						<a href="tel:+79276260050">+7 (927) 626-00-50</a>
-						<a href="tel:+79034679851">+7 (903) 467-98-51</a>
-						<address>410080, пр-т Строителей, 1</address>
-						<a href="">Проложить маршрут</a>
-						<p class="schedule">Режим работы: c 10:00 до 18:00</p>
-					</div>
-					<div class="single-branch">
-						<div class="city-name">воронеж</div>
-						<a href="tel:+74732296378">+7 (473) 229-63-78</a>
-						<a href="tel:+79034679851">+7 (903) 467-98-51</a>
-						<address>394030, ул. Комиссаржевской, 10</address>
-						<a href="">Проложить маршрут</a>
-						<p class="schedule">Режим работы: c 10:00 до 18:00</p>
-					</div>
-					<div class="single-branch">
-						<div class="city-name">ЕРЕВАН</div>
-						<a href="tel:+37491219069">+374 91 21 90 69</a>
-						<a href="tel:+37460509069">+374 60 50 90 69</a>
-						<address>Район Аван 4, дом 2</address>
-						<a href="">Проложить маршрут</a>
-						<p class="schedule">Режим работы: c 10:00 до 18:00</p>
-					</div>
-					<div class="single-branch">
-						<div class="city-name">НОВОСИБИРСК</div>
-						<a href="tel:+73832062461">+7 (383) 20-62-461;</a>
-						<a href="tel:+73832062711">+7 (383) 20-62-711</a>
-						<a href="tel:+7903467985">+7 (903) 467-98-51</a>
-						<p>
-							Факс:
-							<a href="tel:+73832062209">+7 (383) 20-62-209;</a>
-							<a href="tel:+73832062210">+7 (383) 20-62-210</a>
-						</p>
-						<address>630039, ул. Никитина 116, к.3</address>
-						<a href="">Проложить маршрут</a>
-						<p class="schedule">Режим работы: c 10:00 до 18:00</p>
+			<section class="branches">
+				<div class="container">
+					<div class="branches-info">
+						<div class="single-branch">
+							<div class="city-name">МОСКВА</div>
+							<a href="tel:+74991361718" class="branch-number"
+								>+7 (499) 136-17-18</a
+							>
+							<a href="tel:+79034679851" class="branch-number"
+								>+7 (903) 467-98-51</a
+							>
+							<address>
+								115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6
+								(станция метро "Павелецкая")
+							</address>
+							<a href="#" class="route">Проложить маршрут</a>
+							<p class="schedule">Режим работы: c 10:00 до 18:00</p>
+						</div>
+						<div class="single-branch">
+							<div class="city-name">Волгоград</div>
+							<a href="tel:+78442650888" class="branch-number"
+								>+7 (8442) 65-08-88</a
+							>
+							<a href="tel:+78442650888" class="branch-number"
+								>+7 (8442) 65-08-80</a
+							>
+							<address>400080, ул. Командира Рудь, 14А</address>
+							<a href="#" class="route">Проложить маршрут</a>
+							<p class="schedule">Режим работы: c 08:00 до 17:00</p>
+						</div>
+						<div class="single-branch">
+							<div class="city-name">КРАСНОДАР</div>
+							<a href="tel:+78612927188" class="branch-number"
+								>+7 (861) 292-71-88</a
+							>
+							<a href="tel:+79034679851" class="branch-number"
+								>+7 (903) 467-98-51</a
+							>
+							<address>350015, ул. Митрофана Седина, 176</address>
+							<a href="#" class="route">Проложить маршрут</a>
+							<p class="schedule">Режим работы: c 08:00 до 17:00</p>
+						</div>
+						<div class="single-branch">
+							<div class="city-name">Саратов</div>
+							<a href="tel:+79276260050" class="branch-number"
+								>+7 (927) 626-00-50</a
+							>
+							<a href="tel:+79034679851" class="branch-number"
+								>+7 (903) 467-98-51</a
+							>
+							<address>410080, пр-т Строителей, 1</address>
+							<a href="#" class="route">Проложить маршрут</a>
+							<p class="schedule">Режим работы: c 10:00 до 18:00</p>
+						</div>
+						<div class="single-branch">
+							<div class="city-name">воронеж</div>
+							<a href="tel:+74732296378" class="branch-number"
+								>+7 (473) 229-63-78</a
+							>
+							<a href="tel:+79034679851" class="branch-number"
+								>+7 (903) 467-98-51</a
+							>
+							<address>394030, ул. Комиссаржевской, 10</address>
+							<a href="#" class="route">Проложить маршрут</a>
+							<p class="schedule">Режим работы: c 10:00 до 18:00</p>
+						</div>
+						<div class="single-branch">
+							<div class="city-name">ЕРЕВАН</div>
+							<a href="tel:+37491219069" class="branch-number"
+								>+374 91 21 90 69</a
+							>
+							<a href="tel:+37460509069" class="branch-number"
+								>+374 60 50 90 69</a
+							>
+							<address>Район Аван 4, дом 2</address>
+							<a href="#" class="route">Проложить маршрут</a>
+							<p class="schedule">Режим работы: c 10:00 до 18:00</p>
+						</div>
+						<div class="single-branch wide">
+							<div class="city-name">НОВОСИБИРСК</div>
+							<div class="number-wrap">
+								<a href="tel:+73832062461" class="branch-number"
+									>+7 (383) 20-62-461;</a
+								>
+								<a href="tel:+73832062711" class="branch-number"
+									>&nbsp;+7 (383) 20-62-711</a
+								>
+								<a href="tel:+7903467985" class="branch-number"
+									>&nbsp;+7 (903) 467-98-51</a
+								>
+							</div>
+
+							<div class="number-wrap">
+								Факс:
+								<a href="tel:+73832062209" class="branch-number"
+									>&nbsp;+7 (383) 20-62-209;</a
+								>
+								<a href="tel:+73832062210" class="branch-number"
+									>&nbsp;+7 (383) 20-62-210</a
+								>
+							</div>
+
+							<address>630039, ул. Никитина 116, к.3</address>
+							<a href="#" class="route">Проложить маршрут</a>
+							<p class="schedule">Режим работы: c 10:00 до 18:00</p>
+						</div>
 					</div>
 				</div>
 			</section>
 		</main>
-		<footer>
+		<footer class="footer">
 			<div class="footer-links">
 				<div class="links-wrap">
-					<div class="product-links">
-						<a href="">Упаковочное оборудование</a>
-						<a href="">Пленки</a>
-						<a href="">Пакеты</a>
-						<a href="">Прочие материалы</a>
-					</div>
-					<div class="links">
-						<ul>
+					<div class="inner-wrap">
+						<div class="product-links">
+							<a href="#">Упаковочное оборудование</a>
+							<a href="#">Пленки</a>
+							<a href="#">Пакеты</a>
+							<a href="#">Прочие материалы</a>
+						</div>
+						<ul class="links">
 							<li>О Компании</li>
 							<li>Партнеры</li>
 							<li>Доставка</li>
@@ -193,23 +259,32 @@
 							<li>Новости</li>
 						</ul>
 					</div>
+					<div class="line"></div>
+					<p class="rights">© Моневак 2020 | Все права защищены</p>
 				</div>
-				<div class="rights">© Моневак 2020 | Все права защищены</div>
 			</div>
 			<div class="footer-info">
 				<div class="contacts-wrap">
-					<div class="footer-contacts">
-						<a href="tel:+74991361718">+7 (499) 136-17-18</a>
-						<a href="tel:+79034679851">+7 (903) 467-98-51 </a>
-						<a href="mailto:info@monevac.ru">info@monevac.ru</a>
+					<div class="inner-wrap">
+						<div class="footer-contacts">
+							<a href="tel:+74991361718" class="footer-number"
+								>+7 (499) 136-17-18</a
+							>
+							<a href="tel:+79034679851" class="footer-number"
+								>+7 (903) 467-98-51
+							</a>
+							<a href="mailto:info@monevac.ru" class="footer-mail"
+								>info@monevac.ru</a
+							>
+						</div>
+						<button class="button callback-button">Обратный звонок</button>
 					</div>
-					<button class="button callback-button">Обратный звонок</button>
 					<address>
-						Москва ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция
-						метро "Павелецкая")
+						Москва ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 <br />
+						(станция метро "Павелецкая")
 					</address>
 				</div>
-				<a class="add">Разработка и продвижение сайта - TODO</a>
+				<a class="add">Разработка и продвижение сайта - <span>TODO</span></a>
 			</div>
 		</footer>
 	</body>

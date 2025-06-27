@@ -1,5 +1,7 @@
 @import url("header.css");
 @import url("contacts.css");
+@import url("branches.css");
+@import url("footer.css");
 
 :root {
 	--main-red: #bf2738;
@@ -28,6 +30,7 @@
 
 .button {
 	min-width: 190px;
+	max-height: 52px;
 	padding: 19px 28px 19px 29px;
 	font-size: 14px;
 	color: #fff;
