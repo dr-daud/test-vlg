@@ -1,3 +1,4 @@
+@import url("typography.css");
 @import url("header.css");
 @import url("contacts.css");
 @import url("branches.css");
@@ -28,10 +29,14 @@
 .container {
 	max-width: 1290px;
 	margin: 0 auto;
+
+	@media (max-width: 1350px) {
+		max-width: 900px;
+	}
 }
 
 .button {
-	min-width: 190px;
+	width: 190px;
 	height: 52px;
 	font-size: 14px;
 	color: #fff;
@@ -52,5 +57,6 @@
 	&:disabled {
 		background-color: var(--darker-grey);
 		color: var(--secondary-text);
+		cursor: not-allowed;
 	}
 }

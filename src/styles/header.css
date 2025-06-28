@@ -12,7 +12,22 @@
 			flex: 1;
 			align-items: center;
 			justify-content: space-between;
-			max-width: 500px;
+		}
+
+		.left {
+			max-width: 499px;
+
+			@media (max-width: 1350px) {
+				max-width: 300px;
+			}
+		}
+
+		.right {
+			max-width: 492px;
+
+			@media (max-width: 1350px) {
+				max-width: 300px;
+			}
 		}
 
 		.line {
@@ -64,6 +79,12 @@
 				color: var(--secondary-text);
 			}
 		}
+
+		.request-button {
+			@media (max-width: 1350px) {
+				display: none;
+			}
+		}
 	}
 }
 
@@ -93,6 +114,16 @@
 			height: 2px;
 			border-radius: 100%;
 			background-color: var(--secondary-text);
+		}
+	}
+}
+
+@media (max-width: 1350px) {
+	.flex-container {
+		.header-links {
+			li:last-child {
+				display: none;
+			}
 		}
 	}
 }

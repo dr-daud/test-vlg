@@ -1,7 +1,11 @@
 .footer {
 	position: relative;
-	padding: 63px 0 110px 0;
+	padding: 59px 0 68px 0;
 	background: linear-gradient(to right, #222225 50%, #2a2a2e 50%);
+
+	@media (max-width: 1350px) {
+		padding: 43px 0 47px 0;
+	}
 
 	.flex-wrap {
 		display: flex;
@@ -14,10 +18,7 @@
 					display: flex;
 					flex-direction: column;
 					a {
-						margin-top: 10px;
-						font-weight: 400;
-						font-size: 24px;
-						line-height: 140%;
+						margin-top: 9px;
 						color: #fff;
 
 						&:hover {
@@ -68,71 +69,87 @@
 
 		.footer-info {
 			.contacts-wrap {
-				.inner-wrap {
+				@media (max-width: 1350px) {
+					padding-left: 20%;
+				}
+
+				.footer-contacts {
 					display: flex;
-					column-gap: 61px;
+					flex-direction: column;
 
-					.footer-contacts {
-						display: flex;
-						flex-direction: column;
-
-						.footer-number {
-							font-size: 30px;
-							font-weight: 500;
-							line-height: 130%;
-							color: #fff;
-
-							&:nth-child(2) {
-								margin-top: 10px;
+					h3 {
+						&:nth-of-type(2) {
+							.footer-number {
+								margin-top: 15px;
 							}
-						}
-
-						.footer-mail {
-							margin-top: 20px;
-							font-weight: 400;
-							font-size: 24px;
-							line-height: 140%;
-							color: var(--main-red);
 						}
 					}
 
-					.callback-button {
-						background-color: transparent;
-						border: 2px solid #494950;
+					.flex-wrap {
+						display: flex;
+						column-gap: 61px;
 
-						&:hover {
-							background-color: #fff;
-							color: #333;
+						@media (max-width: 1350px) {
+							flex-direction: column;
+							gap: 20px;
+						}
+
+						.numbers {
+							.footer-number {
+								display: inline-block;
+								color: #fff;
+								margin-top: 4px;
+							}
+						}
+					}
+
+					.footer-mail {
+						margin-top: 20px;
+						color: var(--main-red);
+
+						@media (max-width: 1350px) {
+							font-size: 19px;
+							line-height: 110%;
 						}
 					}
 				}
 
-				address {
-					margin-top: 97px;
-					font-style: normal;
-					font-weight: 400;
-					font-size: 16px;
-					line-height: 130%;
-					color: #fff;
-					padding-bottom: 55px;
+				.callback-button {
+					background-color: transparent;
+					border: 2px solid #494950;
+
+					&:hover {
+						background-color: #fff;
+						color: #333;
+					}
 				}
 			}
 
-			.add {
-				position: absolute;
-				bottom: 31px;
-				font-size: 13px;
-				line-height: 110%;
+			address {
+				margin-top: 95px;
+				font-style: normal;
 				font-weight: 400;
-				color: var(--secondary-text);
+				font-size: 16px;
+				line-height: 130%;
+				color: #fff;
+				padding-bottom: 55px;
+			}
+		}
 
-				span {
-					color: #fff;
-					cursor: pointer;
+		.add {
+			position: absolute;
+			bottom: 31px;
+			font-size: 13px;
+			line-height: 110%;
+			font-weight: 400;
+			color: var(--secondary-text);
 
-					&:hover {
-						color: var(--main-red);
-					}
+			span {
+				color: #fff;
+				cursor: pointer;
+
+				&:hover {
+					color: var(--main-red);
 				}
 			}
 		}

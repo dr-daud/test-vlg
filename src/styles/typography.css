@@ -1,0 +1,80 @@
+h1 {
+	/* font-family: 'RoadRadio', sans-serif; */
+	font-weight: 400;
+	font-size: 46px;
+	line-height: 100%;
+	color: var(--main-dark);
+}
+
+.h1-mob {
+	font-size: 22px;
+	line-height: 120%;
+}
+
+h2 {
+	/* font-family: 'RoadRadio', sans-serif; */
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 110%;
+	color: var(--main-dark);
+
+	@media (max-width: 1350px) {
+		font-size: 28px;
+		line-height: 120%;
+	}
+}
+
+h3 {
+	/* font-family: 'Golos Text', sans-serif; */
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 130%;
+
+	@media (max-width: 1350px) {
+		font-size: 23px;
+		line-height: 150%;
+	}
+}
+
+h4 {
+	/* font-family: 'RoadRadio', sans-serif; */
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 110%;
+	color: var(--main-dark);
+	text-transform: uppercase;
+}
+
+.text {
+	/* font-family: 'Golos Text', sans-serif; */
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: var(--secondary-text);
+}
+
+.text-mob {
+	/* font-family: 'Golos Text', sans-serif; */
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+}
+
+.text-big {
+	/* font-family: 'Golos Text', sans-serif; */
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 140%;
+
+	@media (max-width: 1350px) {
+		font-size: 20px;
+		line-height: 170%;
+	}
+}
+
+.text-little-mob {
+	/* font-family: 'Golos Text', sans-serif; */
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+}
