@@ -2,17 +2,16 @@
 	background: linear-gradient(to right, #222225 50%, #2a2a2e 50%);
 
 	.flex-wrap {
-		display: flex;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 10%;
 		padding: 59px 0 43px 0;
-		gap: 10%;
 
 		@media (max-width: 768px) {
 			padding: 43px 0 47px 0;
 		}
 
 		.footer-links {
-			max-width: 40%;
 			@media (max-width: 768px) {
 				max-width: 45%;
 			}
