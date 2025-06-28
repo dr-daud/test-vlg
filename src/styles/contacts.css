@@ -21,6 +21,10 @@
 				width: 50%;
 			}
 
+			@media (max-width: 950px) {
+				width: 287px;
+			}
+
 			.info-number {
 				color: var(--main-dark);
 			}
@@ -69,9 +73,17 @@
 			width: 50%;
 		}
 
+		@media (max-width: 950px) {
+			width: 350px;
+		}
+
 		.contact-info {
 			display: flex;
 			column-gap: 30px;
+
+			@media (max-width: 950px) {
+				flex-direction: column;
+			}
 		}
 		.name-input,
 		.number-input,

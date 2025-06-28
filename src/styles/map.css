@@ -1,6 +1,10 @@
 #map {
 	width: 100%;
 	height: 599px;
+
+	@media (max-width: 950px) {
+		height: 480px;
+	}
 }
 
 [class*="copyrights-pane"] {
