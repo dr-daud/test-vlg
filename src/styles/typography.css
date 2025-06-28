@@ -4,6 +4,10 @@ h1 {
 	font-size: 46px;
 	line-height: 100%;
 	color: var(--main-dark);
+
+	@media (max-width: 768px) {
+		font-size: 32px;
+	}
 }
 
 .h1-mob {
@@ -57,7 +61,7 @@ h4 {
 	/* font-family: 'Golos Text', sans-serif; */
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 140%; 
+	line-height: 140%;
 }
 
 .text-big {

@@ -7,8 +7,15 @@
 		padding: 59px 0 43px 0;
 		gap: 10%;
 
+		@media (max-width: 768px) {
+			padding: 43px 0 47px 0;
+		}
+
 		.footer-links {
 			max-width: 40%;
+			@media (max-width: 768px) {
+				max-width: 45%;
+			}
 			.inner-wrap {
 				.product-links {
 					display: flex;
@@ -29,6 +36,10 @@
 					flex-wrap: wrap;
 					max-width: 80%;
 
+					@media (max-width: 768px) {
+						margin-top: 46px;
+					}
+
 					li {
 						margin-right: 10px;
 						font-size: 16px;
@@ -46,10 +57,6 @@
 
 		.footer-info {
 			.contacts-wrap {
-				@media (max-width: 1350px) {
-					padding-left: 20%;
-				}
-
 				.footer-contacts {
 					display: flex;
 					flex-direction: column;
@@ -88,6 +95,10 @@
 							font-size: 19px;
 							line-height: 110%;
 						}
+
+						@media (max-width: 768px) {
+							margin-top: 15px;
+						}
 					}
 				}
 
@@ -109,6 +120,10 @@
 				font-size: 16px;
 				line-height: 130%;
 				color: #fff;
+
+				@media (max-width: 768px) {
+					margin-top: 33px;
+				}
 			}
 		}
 	}
