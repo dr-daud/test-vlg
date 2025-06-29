@@ -1,149 +1,215 @@
 .footer {
+	position: relative;
 	background: linear-gradient(to right, #222225 50%, #2a2a2e 50%);
 
-	.flex-wrap {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		column-gap: 10%;
+	@media (max-width: 730px) {
+		background: linear-gradient(to bottom, #222225 44%, #2a2a2e 56%);
+	}
+	.footer-container {
 		padding: 59px 0 43px 0;
 
 		@media (max-width: 768px) {
-			padding: 43px 0 47px 0;
+			padding: 36px 0 16px 0;
 		}
 
-		.footer-links {
-			@media (max-width: 768px) {
-				max-width: 45%;
+		.wrap {
+			display: flex;
+			@media (max-width: 730px) {
+				flex-direction: column;
 			}
-			.inner-wrap {
-				.product-links {
-					display: flex;
-					flex-direction: column;
-					a {
-						margin-top: 9px;
-						color: #fff;
+			.footer-links {
+				flex: 1;
+				.inner-wrap {
+					.product-links {
+						display: flex;
+						flex-direction: column;
+						a {
+							margin-top: 9px;
+							color: #fff;
 
-						&:hover {
-							color: var(--main-red);
+							@media (max-width: 768px) {
+								line-height: 134%;
+							}
+
+							@media (max-width: 730px) {
+								margin-top: 7px;
+							}
+
+							&:hover {
+								color: var(--main-red);
+							}
+						}
+					}
+
+					.links {
+						display: flex;
+						margin-top: 69px;
+						flex-wrap: wrap;
+						max-width: 80%;
+
+						@media (max-width: 768px) {
+							margin-top: 46px;
+						}
+
+						@media (max-width: 730px) {
+							margin-top: 19px;
+							max-width: 100%;
+						}
+
+						li {
+							a {
+								font-family: "Akzidenz-Grotesk Pro", sans-serif;
+								margin-right: 19px;
+								font-size: 16px;
+								font-weight: 400;
+								line-height: 180%;
+								color: var(--secondary-text);
+
+								@media (max-width: 768px) {
+									margin-right: 16px;
+								}
+
+								@media (max-width: 730px) {
+									margin-right: 18px;
+								}
+
+								a:hover {
+									color: #fff;
+								}
+							}
 						}
 					}
 				}
-
-				.links {
-					display: flex;
-					margin-top: 69px;
-					flex-wrap: wrap;
-					max-width: 80%;
-
-					@media (max-width: 768px) {
-						margin-top: 46px;
-					}
-
-					li {
-						margin-right: 10px;
-						font-size: 16px;
-						font-weight: 400;
-						line-height: 180%;
-						color: var(--secondary-text);
-					}
-
-					li:hover {
-						color: #fff;
-					}
-				}
 			}
-		}
 
-		.footer-info {
-			.contacts-wrap {
-				.footer-contacts {
-					display: flex;
-					flex-direction: column;
+			.footer-info {
+				flex: 1;
+				.contacts-wrap {
+					padding-left: 124px;
 
-					h3 {
-						&:nth-of-type(2) {
-							.footer-number {
+					@media (max-width: 950px) {
+						padding-left: 40px;
+					}
+
+					@media (max-width: 730px) {
+						padding-left: 0px;
+						margin-top: 69px;
+					}
+
+					.footer-contacts {
+						display: flex;
+						flex-direction: column;
+
+						.numbers-wrap {
+							display: flex;
+							column-gap: 61px;
+
+							@media (max-width: 1350px) {
+								flex-direction: column;
+								gap: 20px;
+							}
+
+							.numbers {
+								display: inline-block;
+								margin-top: 6px;
+
+								@media (max-width: 768px) {
+									margin-top: 9px;
+								}
+
+								@media (max-width: 730px) {
+									margin-top: 12px;
+								}
+
+								h3 {
+									&:nth-of-type(2) {
+										.footer-number {
+											display: inline-block;
+											margin-top: 10px;
+
+											@media (max-width: 768px) {
+												margin-top: 0px;
+											}
+										}
+									}
+
+									a {
+										color: #fff;
+									}
+								}
+							}
+						}
+
+						.footer-mail {
+							margin-top: 20px;
+							color: var(--main-red);
+
+							@media (max-width: 1350px) {
+								font-size: 19px;
+								line-height: 110%;
+								font-family: "Akzidenz-Grotesk Pro", sans-serif;
+							}
+
+							@media (max-width: 768px) {
 								margin-top: 15px;
 							}
 						}
 					}
 
-					.numbers-wrap {
-						display: flex;
-						column-gap: 61px;
-
-						@media (max-width: 1350px) {
-							flex-direction: column;
-							gap: 20px;
-						}
-
-						.numbers {
-							.footer-number {
-								display: inline-block;
-								color: #fff;
-								margin-top: 4px;
-							}
-						}
-					}
-
-					.footer-mail {
-						margin-top: 20px;
-						color: var(--main-red);
-
-						@media (max-width: 1350px) {
-							font-size: 19px;
-							line-height: 110%;
-						}
+					.callback-button {
+						background-color: transparent;
+						border: 2px solid #494950;
 
 						@media (max-width: 768px) {
-							margin-top: 15px;
+							height: 45px;
+						}
+
+						&:hover {
+							background-color: #fff;
+							color: #333;
 						}
 					}
 				}
 
-				.callback-button {
-					background-color: transparent;
-					border: 2px solid #494950;
+				address {
+					font-family: "Akzidenz-Grotesk Pro", sans-serif;
+					margin-top: 95px;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 130%;
+					color: #fff;
+					letter-spacing: 0.5px;
 
-					&:hover {
-						background-color: #fff;
-						color: #333;
+					@media (max-width: 768px) {
+						margin-top: 33px;
 					}
-				}
-			}
 
-			address {
-				margin-top: 95px;
-				font-style: normal;
-				font-weight: 400;
-				font-size: 16px;
-				line-height: 130%;
-				color: #fff;
-
-				@media (max-width: 768px) {
-					margin-top: 33px;
+					@media (max-width: 730px) {
+						margin-top: 41px;
+					}
 				}
 			}
 		}
 	}
 
 	.dev-info {
-		border-top: 1px solid var(--darker-grey-opacity);
-		padding: 21px 0 31px 0;
+		padding: 23px 0 31px 0;
 
-		.dev-info-wrap {
+		@media (max-width: 730px) {
+			padding-top: 46px;
+		}
+
+		.flex {
 			display: flex;
-			gap: 40%;
 
-			@media (max-width: 1350px) {
-				gap: 32%;
-			}
-
-			@media (max-width: 950px) {
-				gap: 24%;
+			@media (max-width: 730px) {
+				flex-direction: column;
 			}
 
 			.rights {
+				flex: 1;
+				font-family: "Akzidenz-Grotesk Pro", sans-serif;
 				color: var(--secondary-text);
 				font-size: 13px;
 				line-height: 110%;
@@ -151,20 +217,50 @@
 			}
 
 			.add {
+				flex: 1;
 				font-size: 13px;
 				line-height: 110%;
 				font-weight: 400;
 				color: var(--secondary-text);
+				font-family: "Akzidenz-Grotesk Pro", sans-serif;
 
-				span {
-					color: #fff;
-					cursor: pointer;
+				@media (max-width: 730px) {
+					margin-top: 10px;
+				}
 
-					&:hover {
-						color: var(--main-red);
+				a {
+					padding-left: 126px;
+
+					@media (max-width: 950px) {
+						padding-left: 40px;
+					}
+
+					@media (max-width: 730px) {
+						padding-left: 0px;
+					}
+
+					span {
+						color: #fff;
+						cursor: pointer;
+
+						&:hover {
+							color: var(--main-red);
+						}
 					}
 				}
 			}
+		}
+	}
+
+	.line {
+		position: absolute;
+		bottom: 68px;
+		height: 1px;
+		width: 100%;
+		background-color: var(--darker-grey-opacity);
+
+		@media (max-width: 730px) {
+			bottom: 84px;
 		}
 	}
 }

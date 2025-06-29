@@ -1,7 +1,7 @@
 ymaps.ready(function () {
     const map = new ymaps.Map("map", {
-        center: [51.533338, 46.034176],
-        zoom: 5
+        center: [53.195878, 50.100202],
+        zoom: 6
     });
 
     const placemarks = [
@@ -28,6 +28,14 @@ ymaps.ready(function () {
         {
             coords: [55.030204, 82.920430],
             hint: 'Новосибирск'
+        },
+        {
+            coords: [53.195878, 50.100202],
+            hint: 'Самара'
+        },
+        {
+            coords: [55.753321, 49.650829],
+            hint: 'Пестрецы'
         }
     ];
 

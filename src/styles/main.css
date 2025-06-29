@@ -17,6 +17,20 @@
 	--grey-bg: #f5f5f5;
 }
 
+@font-face {
+	font-family: "RoadRadio";
+	src: url("../fonts/RoadRadio.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Akzidenz-Grotesk Pro";
+	src: url("../fonts/akzidenzgroteskpro_regular.ttf") format("ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -38,6 +52,10 @@
 	@media (max-width: 950px) {
 		max-width: 710px;
 	}
+
+	@media (max-width: 730px) {
+		max-width: 290px;
+	}
 }
 
 .button {
@@ -45,6 +63,7 @@
 	height: 52px;
 	font-size: 14px;
 	color: #fff;
+	font-family: "RoadRadio", sans-serif;
 	border-radius: 14px;
 	border: none;
 	cursor: pointer;

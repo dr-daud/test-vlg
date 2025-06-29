@@ -5,6 +5,10 @@
 	@media (max-width: 950px) {
 		height: 480px;
 	}
+
+	@media (max-width: 730px) {
+		height: 477px;
+	}
 }
 
 [class*="copyrights-pane"] {

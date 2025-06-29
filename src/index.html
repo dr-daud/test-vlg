@@ -19,10 +19,16 @@
 							<div class="line upper-line"></div>
 							<div class="line lower-line"></div>
 						</div>
-						<ul class="header-links">
-							<li><a href="#">Упаковка</a></li>
-							<li><a href="#">Оборудование</a></li>
-							<li><a href="#">Сервис и запчасти</a></li>
+						<ul class="header-links-wrap">
+							<li class="header-links">
+								<a href="#" class="header-link">Упаковка</a>
+							</li>
+							<li class="header-links">
+								<a href="#" class="header-link">Оборудование</a>
+							</li>
+							<li class="header-links">
+								<a href="#" class="header-link">Сервис и запчасти</a>
+							</li>
 						</ul>
 					</div>
 					<div class="logo-wrap">
@@ -65,8 +71,10 @@
 								>info@monevac.ru</a
 							>
 							<div class="additional-info">
-								<p>Полное наименование:</p>
-								<p>Общество с ограниченной ответственностью «МОНЕВАК»</p>
+								<p>
+									Полное наименование: <br class="desktop-break" />
+									Общество с ограниченной ответственностью «МОНЕВАК»
+								</p>
 								<p>Сокращенное наименование: ООО «МОНЕВАК»</p>
 							</div>
 							<ul class="info-text">
@@ -79,7 +87,8 @@
 							</ul>
 							<ul class="info-text">
 								<li>
-									Банк: Филиала «Ростовский» ОАО «Альфа-Банк» г Ростов на Дону
+									Банк: Филиала «Ростовский» ОАО
+									<br class="tablet-break" />«Альфа-Банк» г Ростов на Дону
 								</li>
 								<li>БИК: 046015207</li>
 								<li>к/с: 30101810500000000207</li>
@@ -107,18 +116,20 @@
 									id="name"
 									placeholder="Ваше имя"
 									class="name-input text"
+									required
 								/>
 								<input
 									type="tel"
-									pattern="\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}"
 									placeholder="Ваш телефон"
 									class="number-input text"
+									required
 								/>
 							</div>
 							<textarea
 								class="text-area text"
 								placeholder="Ваше сообщение"
 								rows="5"
+								required
 							></textarea>
 							<div class="info-checkbox">
 								<input
@@ -233,20 +244,19 @@
 									>+7 (383) 20-62-461;</a
 								>
 								<a href="tel:+73832062711" class="branch-number"
-									>&nbsp;+7 (383) 20-62-711</a
+									>+7 (383) 20-62-711</a
 								>
 								<a href="tel:+7903467985" class="branch-number"
-									>&nbsp;+7 (903) 467-98-51</a
+									>+7 (903) 467-98-51</a
 								>
 							</div>
 
 							<div class="number-wrap">
-								Факс:
 								<a href="tel:+73832062209" class="branch-number"
-									>&nbsp;+7 (383) 20-62-209;</a
+									>Факс: +7 (383) 20-62-209;</a
 								>
 								<a href="tel:+73832062210" class="branch-number"
-									>&nbsp;+7 (383) 20-62-210</a
+									>+7 (383) 20-62-210</a
 								>
 							</div>
 
@@ -259,8 +269,8 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="container">
-				<div class="flex-wrap">
+			<div class="footer-container container">
+				<div class="wrap">
 					<div class="footer-links">
 						<div class="inner-wrap">
 							<div class="product-links">
@@ -270,15 +280,15 @@
 								<a href="#" class="text-big">Прочие материалы</a>
 							</div>
 							<ul class="links">
-								<li>О Компании</li>
-								<li>Партнеры</li>
-								<li>Доставка</li>
-								<li>Оплата</li>
-								<li>Обмен и возврат</li>
-								<li>Контакты</li>
-								<li>Распродажа</li>
-								<li>Сервис</li>
-								<li>Новости</li>
+								<li><a href="#">О Компании</a></li>
+								<li><a href="#">Партнеры</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Оплата</a></li>
+								<li><a href="#">Обмен и возврат</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Распродажа</a></li>
+								<li><a href="#">Сервис</a></li>
+								<li><a href="#">Новости</a></li>
 							</ul>
 						</div>
 					</div>
@@ -315,15 +325,14 @@
 				</div>
 			</div>
 			<div class="dev-info">
-				<div class="container">
-					<div class="dev-info-wrap">
-						<p class="rights">© Моневак 2020 | Все права защищены</p>
-						<a class="add"
-							>Разработка и продвижение сайта - <span>TODO</span></a
-						>
-					</div>
+				<div class="flex container">
+					<p class="rights">© Моневак 2020 | Все права защищены</p>
+					<p class="add">
+						<a>Разработка и продвижение сайта - <span>TODO</span></a>
+					</p>
 				</div>
 			</div>
+			<div class="line"></div>
 		</footer>
 		<script
 			src="https://api-maps.yandex.ru/2.1/?apikey=ad5c4f52-8276-4fe9-941f-b370ef74cbcb&lang=ru_RU"

@@ -4,7 +4,11 @@
 	background-color: var(--grey-bg);
 
 	@media (max-width: 768px) {
-		padding: 15px 0 15px 0;
+		padding: 15px 0 20px 0;
+	}
+
+	@media (max-width: 730px) {
+		padding: 18px 0 20px 0;
 	}
 }
 
@@ -13,12 +17,25 @@
 	display: flex;
 
 	@media (max-width: 768px) {
-		padding: 40px 0 50px 0;
+		padding: 34px 0 50px 0;
+	}
+
+	@media (max-width: 730px) {
+		padding-top: 30px;
 	}
 
 	.contacts-flex {
 		display: flex;
 		column-gap: 53px;
+
+		@media (max-width: 950px) {
+			column-gap: 73px;
+		}
+
+		@media (max-width: 730px) {
+			flex-direction: column;
+			gap: 50px;
+		}
 
 		.info {
 			display: flex;
@@ -35,22 +52,48 @@
 
 			.info-number {
 				color: var(--main-dark);
+				font-family: "RoadRadio", sans-serif;
 			}
 
 			.info-mail {
+				display: inline-block;
 				color: var(--main-red);
 				font-size: 25px;
 				font-weight: 400;
+
+				@media (max-width: 768px) {
+					margin-top: 6px;
+				}
 			}
 
 			.additional-info {
 				font-size: 17px;
-				margin-top: 15px;
+				margin-top: 19px;
 				font-weight: 400;
-				line-height: 110%;
+				line-height: 116%;
 				color: var(--main-dark);
+
 				p {
 					margin-top: 3px;
+
+					@media (max-width: 768px) {
+						margin-top: 0px;
+					}
+
+					@media (max-width: 730px) {
+						line-height: 145%;
+					}
+
+					.desktop-break {
+						@media (max-width: 768px) {
+							display: none;
+						}
+					}
+				}
+
+				@media (max-width: 768px) {
+					font-size: 14px;
+					line-height: 140%;
 				}
 			}
 
@@ -60,8 +103,24 @@
 				font-size: 13px;
 				line-height: 150%;
 
+				.tablet-break {
+					display: none;
+
+					@media (max-width: 768px) {
+						display: block;
+					}
+				}
+
+				@media (max-width: 768px) {
+					line-height: 157%;
+				}
+
 				&:last-child {
 					margin-top: 25px;
+
+					@media (max-width: 768px) {
+						margin-top: 19px;
+					}
 				}
 
 				address {
@@ -85,6 +144,20 @@
 			width: 350px;
 		}
 
+		@media (max-width: 730px) {
+			width: 290px;
+		}
+
+		h2 {
+			@media (max-width: 730px) {
+				font-size: 20px;
+				line-height: 110%;
+			}
+			label {
+				font-family: "RoadRadio", sans-serif;
+			}
+		}
+
 		.contact-info {
 			display: flex;
 			column-gap: 30px;
@@ -93,9 +166,11 @@
 				flex-direction: column;
 			}
 		}
+
 		.name-input,
 		.number-input,
 		.text-area {
+			position: relative;
 			flex: 1;
 			min-height: 52px;
 			border: none;
@@ -106,21 +181,40 @@
 
 			@media (max-width: 768px) {
 				margin-top: 10px;
+				padding: 18px 20px;
 			}
+		}
+
+		.name-input::placeholder,
+		.number-input::placeholder,
+		.text-area::placeholder {
+			font-size: 16px;
+			line-height: 150%;
+			font-weight: 400;
 		}
 
 		.text-area {
 			display: block;
+			margin-top: 28px;
 			padding-top: 17px;
 			resize: none;
 			width: 100%;
+
+			@media (max-width: 768px) {
+				margin-top: 12px;
+				height: 166px;
+			}
 		}
 
 		.info-checkbox {
 			display: flex;
 			align-items: center;
-			margin-top: 20px;
+			margin-top: 16px;
 			column-gap: 16px;
+
+			@media (max-width: 768px) {
+				margin-top: 24px;
+			}
 
 			input {
 				width: 20px;
@@ -157,6 +251,10 @@
 				@media (max-width: 1350px) {
 					max-width: 313px;
 				}
+
+				@media (max-width: 730px) {
+					max-width: 254px;
+				}
 				span {
 					color: var(--main-dark);
 				}
@@ -165,6 +263,10 @@
 
 		.request-button {
 			margin-top: 30px;
+
+			@media (max-width: 730px) {
+				margin-top: 21px;
+			}
 		}
 	}
 }
