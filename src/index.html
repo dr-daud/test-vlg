@@ -111,26 +111,37 @@
 								<label for="name">Остались вопросы?</label>
 							</h2>
 							<div class="contact-info">
-								<input
-									type="text"
-									id="name"
-									placeholder="Ваше имя"
-									class="name-input text"
-									required
-								/>
-								<input
-									type="tel"
-									placeholder="Ваш телефон"
-									class="number-input text"
-									required
-								/>
+								<div class="input-wrap">
+									<input
+										type="text"
+										id="name"
+										placeholder="Ваше имя"
+										class="contacts-input"
+										required
+									/>
+									<label for="name">Ваше имя</label>
+								</div>
+								<div class="input-wrap">
+									<input
+										type="tel"
+										id="tel"
+										placeholder="Ваш телефон"
+										class="contacts-input"
+										required
+									/>
+									<label for="tel">Ваш телефон</label>
+								</div>
 							</div>
-							<textarea
-								class="text-area text"
-								placeholder="Ваше сообщение"
-								rows="5"
-								required
-							></textarea>
+							<div class="textarea-wrap">
+								<textarea
+									class="text-area"
+									id="textarea"
+									placeholder="Ваше сообщение"
+									rows="7"
+									required
+								></textarea>
+								<label for="textarea">Ваше сообщение</label>
+							</div>
 							<div class="info-checkbox">
 								<input
 									type="checkbox"
