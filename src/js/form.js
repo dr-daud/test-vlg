@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const phoneInput = document.getElementById('tel');
     const phoneLabel = document.getElementById('phone-label')
     const nameLabel = document.getElementById('name-label')
+    const checkbox = document.getElementById('agree')
+    const checkboxWrap = document.getElementById('checkboxWrap')
+
     let maskInstance = null;
 
     const form = document.getElementById('contact-us');
@@ -14,6 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const phoneErrorMsg = document.createElement('div');
     phoneErrorMsg.classList.add('error-message');
     phoneLabel.appendChild(phoneErrorMsg);
+
+    const checkboxErrorMsg = document.createElement('div');
+    checkboxErrorMsg.classList.add('error-message');
+    checkboxWrap.after(checkboxErrorMsg);
 
     phoneInput.addEventListener('focus', function () {
         if (!maskInstance) {
@@ -52,10 +59,17 @@ document.addEventListener("DOMContentLoaded", function () {
             isValid = false;
         }
 
+        if (!checkbox.checked) {
+            checkboxErrorMsg.textContent = 'Подтвердите свое согласие'
+            isValid = false
+        }
+
         if (isValid) {
             console.log("Имя:", nameInput.value, 'Номер телефона:', phoneInput.value)
             nameInput.value = ''
             phoneInput.value = ''
+            checkbox.checked = false
+            checkboxErrorMsg.textContent = ''
         }
     });
 

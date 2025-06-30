@@ -286,8 +286,8 @@
 			input {
 				width: 20px;
 				height: 20px;
-				appearance: none;
-				-webkit-appearance: none;
+				/* appearance: none; */
+				/* -webkit-appearance: none; */
 				background-color: var(--grey-bg);
 				border: var(--grey-bg);
 				cursor: pointer;
