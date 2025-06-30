@@ -9,7 +9,11 @@
 		padding: 59px 0 43px 0;
 
 		@media (max-width: 768px) {
-			padding: 36px 0 16px 0;
+			padding: 31px 0 16px 0;
+		}
+
+		@media (max-width: 730px) {
+			padding: 35px 0 16px 0;
 		}
 
 		.wrap {
@@ -28,11 +32,13 @@
 							color: #fff;
 
 							@media (max-width: 768px) {
-								line-height: 134%;
+								line-height: 100%;
+								margin-top: 14px;
 							}
 
 							@media (max-width: 730px) {
-								margin-top: 7px;
+								margin-top: 12px;
+								line-height: 108%;
 							}
 
 							&:hover {
@@ -48,11 +54,11 @@
 						max-width: 80%;
 
 						@media (max-width: 768px) {
-							margin-top: 46px;
+							margin-top: 55px;
 						}
 
 						@media (max-width: 730px) {
-							margin-top: 19px;
+							margin-top: 22px;
 							max-width: 100%;
 						}
 
@@ -260,7 +266,7 @@
 		background-color: var(--darker-grey-opacity);
 
 		@media (max-width: 730px) {
-			bottom: 84px;
+			bottom: 89px;
 		}
 	}
 }

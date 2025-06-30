@@ -11,10 +11,10 @@
 	}
 }
 
-[class*="ymaps-2"][class*="-ground-pane"] {
-	filter: grayscale(1);
-}
-
 [class*="copyrights-pane"] {
 	display: none !important;
+}
+
+[class*="ground-pane"] {
+	filter: grayscale(1);
 }

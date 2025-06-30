@@ -16,7 +16,7 @@
 		position: relative;
 
 		.logo-wrap {
-			position: absolute;
+			position: absolute; 
 			left: 50%;
 			transform: translateX(-50%);
 
