@@ -106,7 +106,7 @@
 								</address>
 							</div>
 						</div>
-						<form class="contact-us">
+						<form class="contact-us" id="contact-us">
 							<h2>
 								<label for="name">Остались вопросы?</label>
 							</h2>
@@ -117,9 +117,8 @@
 										id="name"
 										placeholder="Ваше имя"
 										class="contacts-input"
-										required
 									/>
-									<label for="name">Ваше имя</label>
+									<label for="name" id="name-label" class="name-label">Ваше имя</label>
 								</div>
 								<div class="input-wrap">
 									<input
@@ -127,9 +126,10 @@
 										id="tel"
 										placeholder="Ваш телефон"
 										class="contacts-input"
-										required
 									/>
-									<label for="tel">Ваш телефон</label>
+									<label for="tel" id="phone-label" class="phone-label"
+										>Ваш телефон</label
+									>
 								</div>
 							</div>
 							<div class="textarea-wrap">
@@ -138,7 +138,6 @@
 									id="textarea"
 									placeholder="Ваше сообщение"
 									rows="7"
-									required
 								></textarea>
 								<label for="textarea">Ваше сообщение</label>
 							</div>
@@ -349,6 +348,8 @@
 			src="https://api-maps.yandex.ru/2.1/?apikey=ad5c4f52-8276-4fe9-941f-b370ef74cbcb&lang=ru_RU"
 			type="text/javascript"
 		></script>
+		<script src="https://unpkg.com/imask"></script>
 		<script src="js/map.js"></script>
+		<script src="js/form.js"></script>
 	</body>
 </html>

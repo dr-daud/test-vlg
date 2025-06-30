@@ -17,8 +17,12 @@
 
 		.logo-wrap {
 			position: absolute;
-			left: 51%;
+			left: 50%;
 			transform: translateX(-50%);
+
+			@media (max-width: 768px) {
+				left: 51%;
+			}
 
 			@media (max-width: 730px) {
 				left: 50%;
